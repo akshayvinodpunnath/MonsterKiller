@@ -24,7 +24,7 @@ function attackHandler() {
 }
 
 function strongAttachHandler() {
-    const damage = dealMonsterDamage(ATTACK_VALUE)
+    const damage = dealMonsterDamage(STONG_ATTACK_VALUE)
     currentMonsterHealth -= damage;
     const playerDamage = dealPlayerDamage(MONSTER_ATTACK_VALUE);
     currentPlayerHealth -= playerDamage;
