@@ -175,7 +175,9 @@ function printLogHandler() {
     // }
     //console.log(battleLog);
     for (const logEntry of battleLog) {
-        console.log(logEntry);
+        for (const key in logEntry) {
+            console.log(`${key} => ${logEntry[key]}`);
+        }
     }
 }
 // function attackHandler() {
